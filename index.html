@@ -9,6 +9,8 @@
     <!--ESTILOS-->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <!--BOXICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -18,11 +20,11 @@
                 <a href="/" class="logo">Vaccination</a>
                 <nav class="navigation">
                     <ul class="navigation_links">
-                        <li class="link">Database</li>
-                        <li class="link">Education</li>
-                        <li class="link">News</li>
-                        <li class="link">Regulation</li>
-                        <li class="link active">Hoax Buster</li>
+                        <li class="link"><a href="">Database</a></li>
+                        <li class="link"><a href="">Education</a></li>
+                        <li class="link"><a href="">News</a></li>
+                        <li class="link"><a href="">Regulation</a></li>
+                        <li class="link"><a href="">Hoax Buster</a></li>
                     </ul>
                 </nav>
             </div>
@@ -30,32 +32,43 @@
     </header>
 
     <main>
-        <section>
-            <div>
+        <section class="section_contenido">
+            <div class="div_principal">
                 <div class="section_principal">
-                    <h1>Fight Virus With Vaccines</h1>
-                    <p>Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
-                    <div>
-                        <p><span>Best protection</span></p>
-                        <p><span>Selected vaccines</span></p>
+                    <div class="div_contenido">
+                        <div class="contenido">
+                            <h1 class="title">Fight Virus <br> With Vaccines</h1>
+                            <div class="div_texto">
+                                <p class="texto">Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
+                            </div>
+                            <div class="div_options">
+                                <i class='bx bxs-check-shield'></i>
+                                <p><span>Best protection</span></p>
+                                <i class='bx bxs-star'></i>
+                                <p><span>Selected vaccines</span></p>
+                            </div>
+                        </div>
+                        <p><span>Schedule your vaccinations</span></p>
+                        <div>
+                            <div>
+                                <p>Location</p>
+                                <p>Jakarta Utara</p>
+                            </div>
+                            <div>
+                                <p>Date</p>
+                                <p>08 July 2021</p>
+                            </div>
+                            <div>
+                                <p>Vaccine Type</p>
+                                <p>Moderna</p>
+                            </div>
+                            <div>
+                                <a href="/">Submit</a>
+                            </div>
+                        </div>
                     </div>
-                    <p><span>Schedule your vaccinations</span></p>
-                    <div>
-                        <div>
-                            <p>Location</p>
-                            <p>Jakarta Utara</p>
-                        </div>
-                        <div>
-                            <p>Date</p>
-                            <p>08 July 2021</p>
-                        </div>
-                        <div>
-                            <p>Vaccine Type</p>
-                            <p>Moderna</p>
-                        </div>
-                        <div>
-                            <a href="/">Submit</a>
-                        </div>
+                    <div class="div_imagen">
+                        <img src="./assets/doctora1.jpg" alt="imagen doctora">
                     </div>
                 </div>
             </div>
