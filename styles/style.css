@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 :root {
     --color-titulo: rgb(36, 55, 131);
-    --color-subtitulo: rgb(15, 71, 224);
+    --color-subtitulo: rgb(45, 84, 192);
     --texto: rgb(151, 135, 135);
     --fuente: 'Rubik', sans-serif;
     --grosor-texto: 500;
-    --tamanio-titulo: 6rem;
+    --tamanio-titulo: 4.5rem;
+    --tamanio-text-options: 1.4rem;
 }
 
 html {
@@ -38,6 +39,35 @@ p {
     max-width: 120rem;
     /** = 1200px; **/
     margin: 0 auto;
+}
+
+
+/*GLOBALES*/
+
+.btn_option {
+    color: #fff;
+    background: var(--color-subtitulo);
+    text-decoration: none;
+    padding: 1.5rem 3.5rem;
+    border-radius: 5px;
+}
+
+.s-line {
+    line-height: 0;
+}
+
+.s-p {
+    margin: 0;
+    padding: 0;
+}
+
+.m-section {
+    margin-top: 10rem;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -84,26 +114,37 @@ header {
 
 .section_contenido {
     max-height: 100vh;
+    /* position: relative; */
 }
 
 .div_principal {
-    padding-top: 12rem;
+    padding-top: 17rem;
 }
 
 .section_principal {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
+    .div_contenido {
+        min-width: 100%;
+    }
     .section_principal {
-        display: block;
+        flex-direction: column;
+    }
+    .div_texto {
+        min-width: 100%;
+    }
+    .div_options_subtitle {
+        flex-wrap: wrap;
+        margin: 0;
     }
 }
 
 .div_contenido {
-    padding-left: 7rem;
-    max-width: 70%;
+    padding-left: 12rem;
+    max-width: 60%;
 }
 
 .contenido {
@@ -114,16 +155,19 @@ header {
     font-size: var(--tamanio-titulo);
     color: var(--color-titulo);
     padding: 0;
+    margin: 0;
 }
 
 .div_texto {
+    padding: 0;
     max-width: 50%;
 }
 
 .texto {
     color: var(--texto);
     font-weight: var(--grosor-texto);
-    line-height: 2;
+    line-height: 1.5;
+    font-size: 1.8rem;
 }
 
 .div_options {
@@ -133,12 +177,81 @@ header {
     align-items: center;
 }
 
-.div_options>p {
+.texto_options {
     color: var(--color-titulo);
     font-weight: var(--grosor-texto);
     padding-right: 1rem;
+    font-size: var(--tamanio-text-options);
 }
 
 .div_options>i {
     color: yellow;
 }
+
+.texto_info {
+    color: var(--color-titulo);
+    /* font-size: 1.7rem; */
+    font-weight: 700;
+}
+
+.subtitle_option {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.subtitle_option i {
+    margin-right: 1.2rem;
+    color: var(--color-titulo);
+}
+
+.div_info {
+    margin-top: 3rem;
+}
+
+.div_options_subtitle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.651);
+    /* position: absolute;
+    bottom: 2rem;
+    left: 15rem; */
+    box-shadow: -1px 15px 30px -12px black;
+    border-radius: 5px;
+    /* padding: 0 8rem; */
+    margin-left: 5rem;
+}
+
+.div_option_info {
+    padding: 2.2rem 0;
+}
+
+.div_option_info:last-of-type {
+    margin-right: 0;
+}
+
+.div_option_info .option_text_div {
+    padding-left: 2rem;
+}
+
+.option_text_div {
+    color: var(--color-titulo);
+    /* font-size: 1.7rem; */
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+
+/*SECTION VACUNAS*/
+
+.div_img>img {
+    max-width: calc(22.5% - 1rem);
+    margin-right: 3rem;
+}
+
+
+/* .div_img>img:last-of-type {
+    margin-right: 0;
+} */
