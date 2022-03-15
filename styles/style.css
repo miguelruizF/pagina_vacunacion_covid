@@ -102,6 +102,15 @@ a {
     justify-content: space-between;
 }
 
+.j-center {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.d-grid {
+    display: grid;
+}
+
 .d-around {
     display: flex;
     justify-content: space-between;
@@ -128,6 +137,23 @@ a {
 .icon-options {
     color: var(--color-titulo);
     font-size: 4rem;
+}
+
+.f-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.t-align {
+    text-align: center;
+}
+
+.t-align-left {
+    text-align: left;
+}
+
+.c-pointer {
+    cursor: pointer;
 }
 
 
@@ -340,6 +366,59 @@ header {
     display: none;
 }
 
+
+/*SECTION CONTACTO */
+
 .div_contacto {
     padding-left: 15rem;
+}
+
+.column-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.column-2>i {
+    margin: 0;
+    padding: 0;
+}
+
+.column-card {
+    display: block;
+}
+
+.t-center {
+    margin: 0 auto;
+}
+
+.p-card {
+    margin: 3rem 2rem;
+}
+
+.border-card {
+    background-color: rgba(255, 255, 255, 0.651);
+    box-shadow: -1px 15px 30px -12px black;
+    border-radius: 5px;
+}
+
+.border-azul {
+    background-color: rgba(52, 106, 255, 0.322);
+    box-shadow: -1px 15px 30px -12px black;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    width: 80%;
+    margin: 1rem 0;
+    color: var(--color-titulo);
+    font-weight: bold;
+}
+
+
+/*section links contacto*/
+
+.contact {
+    margin-right: 10rem;
+}
+
+.section_contact_info {
+    margin-top: 8rem;
 }
