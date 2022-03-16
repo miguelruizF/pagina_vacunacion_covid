@@ -421,4 +421,23 @@ header {
 
 .section_contact_info {
     margin-top: 8rem;
+    background-color: rgba(52, 106, 255, 0.082);
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.contact_links>p {
+    color: var(--texto);
+    font-weight: var(--grosor-texto);
+    line-height: 1;
+    font-size: 1.8rem;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 0;
 }
